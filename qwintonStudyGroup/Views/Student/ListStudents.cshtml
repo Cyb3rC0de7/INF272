@@ -44,9 +44,7 @@
                 @Html.DisplayFor(modelItem => item.email)
             </td>
             <td>
-                <button onclick="">
-                    LINK
-                </button>
+                <a href="@Url.Content(item.myLink)" class="btn btn-primary">LINK</a>
             </td>
         </tr>
     }
