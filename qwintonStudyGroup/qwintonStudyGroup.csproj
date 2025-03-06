@@ -145,6 +145,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -159,6 +160,18 @@
     <Content Include="HTML\Person03.html" />
     <Content Include="HTML\Person04.html" />
     <Content Include="HTML\Person05.html" />
+    <Content Include="HTML\Images\Anthony-Mackie-Captain-America-4.webp" />
+    <Content Include="HTML\Images\antman-and-the-wasp-marvel-4.webp" />
+    <Content Include="HTML\Images\black-widow-1.webp" />
+    <Content Include="HTML\Images\Don-cheadle-as-rhodey-Cropped.webp" />
+    <Content Include="HTML\Images\hawkeye.webp" />
+    <Content Include="HTML\Images\peter-parker-Cropped.webp" />
+    <Content Include="HTML\Images\steve-rogers.webp" />
+    <Content Include="HTML\Images\The-Incredible-Hulk.webp" />
+    <Content Include="HTML\Images\thor-lightning.webp" />
+    <Content Include="HTML\Images\tony-stark-iron-man.webp" />
+    <Content Include="HTML\Images\Vision-Civil-War-Cropped.webp" />
+    <Content Include="HTML\Images\Wanda-Scarlet-Witch-Cropped.webp" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -188,7 +201,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="HTML\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
