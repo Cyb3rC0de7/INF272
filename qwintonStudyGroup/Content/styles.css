@@ -1,6 +1,6 @@
 ﻿body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: green;
 }
 
 nav ul {
@@ -35,8 +35,46 @@ nav ul {
         }
 
 section {
+    background-color: white;
+    display: flex;
+    align-items: center;
     border: 2px solid black;
+    padding: 10px;
     margin: 10px 0;
+}
+
+.background {
+    flex-direction: row;
+}
+
+.hobbies {
+}
+
+section img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 15px;
+}
+
+section p {
+    flex: 1;
+}
+
+.modules {
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+
+.modules table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modules th, .modules td {
+    padding: 8px;
+    text-align: left;
 }
 
 img {

@@ -160,7 +160,9 @@
     <Content Include="HTML\Person03.html" />
     <Content Include="HTML\Person04.html" />
     <Content Include="HTML\Person05.html" />
-    <Content Include="HTML\Images\Anthony-Mackie-Captain-America-4.webp" />
+    <Content Include="HTML\Images\Anthony-Mackie-Captain-America-4.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="HTML\Images\antman-and-the-wasp-marvel-4.webp" />
     <Content Include="HTML\Images\black-widow-1.webp" />
     <Content Include="HTML\Images\Don-cheadle-as-rhodey-Cropped.webp" />
