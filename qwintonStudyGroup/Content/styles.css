@@ -1,38 +1,33 @@
-﻿body {
-    font-family: Arial, sans-serif;
-    background-color: green;
-}
-
-nav ul {
+﻿nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-    nav ul li {
-        display: inline-block;
-        padding: 10px;
-        background-color: black;
-        border-right: 2px solid white;
-    }
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    border-right: 2px solid white;
+}
 
-        nav ul li:last-child {
-            border-right: none;
-        }
+nav ul li:last-child {
+    border-right: none;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 
-        nav ul li:hover {
-            background-color: grey;
-        }
+nav ul li:hover {
+    background-color: grey;
+}
 
-        nav ul li.active {
-            background-color: forestgreen; 
-        }
+nav ul li.active {
+    background-color: forestgreen; 
+}
 
 section {
     background-color: white;
@@ -84,6 +79,69 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
-    img:hover {
-        transform: scaleX(-1);
+img:hover {
+    transform: scaleX(-1);
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #337ab7;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.panel {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
+
+.well {
+    min-height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: #e7e7e7;
+    color: #555;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+}
+
+.img-thumbnail {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .well {
+        min-height: auto;
+        margin-bottom: 20px;
     }
+}

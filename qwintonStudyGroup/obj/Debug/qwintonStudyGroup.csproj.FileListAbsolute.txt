@@ -236,3 +236,4 @@ C:\Users\knock\source\repos\INF272\qwintonStudyGroup\obj\Debug\qwintonStudyGroup
 C:\Users\knock\source\repos\INF272\qwintonStudyGroup\obj\Debug\qwintonS.7A531DB4.Up2Date
 C:\Users\knock\source\repos\INF272\qwintonStudyGroup\obj\Debug\qwintonStudyGroup.dll
 C:\Users\knock\source\repos\INF272\qwintonStudyGroup\obj\Debug\qwintonStudyGroup.pdb
+C:\Users\knock\OneDrive\Documents\UP\2025\INF272\INF272\qwintonStudyGroup\bin\HTML\Images\Anthony-Mackie-Captain-America-4.webp

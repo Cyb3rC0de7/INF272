@@ -25,7 +25,8 @@
         <th>
             @Html.DisplayNameFor(model => model.email)
         </th>
-        <th></th>
+        <th>Link</th>
+        <th>Remove</th>
     </tr>
 
     @foreach (var item in Model) //For each student
@@ -46,7 +47,27 @@
             <td>
                 <a href="@Url.Content(item.myLink)" class="btn btn-primary">LINK</a>
             </td>
+            <td>
+                <button class="btn btn-danger remove-btn" onclick="remove(this)">Remove</button>
+            </td>
         </tr>
     }
 
 </table>
+
+@section scripts{
+    <script type="text/javascript">
+        function remove(button) {
+            $(button).closest('tr').fadeOut(300, function () {
+                $(this).remove();
+            })
+        }
+
+        $('table tr').each(function () {
+            var nameCell = $(this).find('td:nth-child(2)'); // 2nd column = name
+            if (nameCell.text().trim().startsWith('R')) {
+                $(this).css('color', 'red');
+            }
+        });
+    </script>
+    }

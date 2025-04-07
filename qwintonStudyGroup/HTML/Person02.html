@@ -1,51 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xander's Page</title>
-    <link href="../Content/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Xander</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Xander</h1>
-    <nav>
-        <ul>
-            <li><a href="../">MAIN</a></li>
-            <li><a href="../Student/ListStudents">LIST</a></li>
-            <li><a href="Person01.html">Qwinton</a></li>
-            <li class="active"><a href="Person02.html">Xander</a></li>
-            <li><a href="Person03.html">Arno</a></li>
-            <li><a href="Person04.html">Regardt</a></li>
-            <li><a href="Person05.html">Reinhardt</a></li>
-            <li><a href="javascript:history.back()">BACK</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Person 2 - Xander</h1>
 
-    <section class="background">
-        <img src="Images/black-widow-1.webp" alt="Xander">
-        <div>
-            <h2>Background</h2>
-            <p>Xander is an aspiring software developer who enjoys solving complex problems.</p>
+        <!-- Bootstrap Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../">MAIN</a></li>
+                        <li><a href="../Student/ListStudents">LIST</a></li>
+                        <li><a href="Person01.html">Qwinton</a></li>
+                        <li class="active"><a href="Person02.html">Xander</a></li>
+                        <li><a href="Person03.html">Arno</a></li>
+                        <li><a href="Person04.html">Regardt</a></li>
+                        <li><a href="Person05.html">Reinhardt</a></li>
+                        <li><a href="javascript:history.back()">Back</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Panel Layout -->
+        <!-- Background and Bio Panel -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Background</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="Images/hawkeye.webp" alt="Xander" class="img-responsive img-thumbnail" />
+                    </div>
+                    <div class="col-md-8">
+                        <p>I'm Xander, a Computer Science student with a keen interest in web development and database design. I enjoy solving complex problems and building intuitive user interfaces.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section class="hobbies">
-        <div>
-            <h2>Hobbies</h2>
-            <p>Xander enjoys reading sci-fi novels and playing chess.</p>
+        <!-- Hobbies Panel -->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Hobbies</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">Photography</li>
+                            <li class="list-group-item">Hiking</li>
+                            <li class="list-group-item">Reading tech blogs</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/The-Incredible-Hulk.webp" alt="Xander Hobby" class="img-responsive img-thumbnail" />
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="Images/Don-cheadle-as-rhodey-Cropped.webp" alt="Xander's hobby">
-    </section>
 
-    <section class="modules">
-        <h2>Registered Modules</h2>
-        <table>
-            <tr><th>Modules Semester 1</th><th>Modules Semester 2</th></tr>
-            <tr><td>INF271</td><td>INF272</td></tr>
-            <tr><td>COS210</td><td>COS221</td></tr>
-            <tr><td>COS230</td><td>COS240</td></tr>
-            <tr><td>IMY200</td><td></td></tr>
-        </table>
-    </section>
+        <!-- Modules Panel -->
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Modules</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Modules Semester 1</th>
+                            <th>Modules Semester 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>INF272</td>
+                            <td>INF272</td>
+                        </tr>
+                        <tr>
+                            <td>COS301</td>
+                            <td>COS301</td>
+                        </tr>
+                        <tr>
+                            <td>COS332</td>
+                            <td>COS330</td>
+                        </tr>
+                        <tr>
+                            <td>IMY310</td>
+                            <td>COS341</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

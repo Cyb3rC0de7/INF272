@@ -1,54 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qwinton's Page</title>
-    <link href="../Content/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Qwinton</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Qwinton Knocklein</h1>
-    <nav>
-        <ul>
-            <li><a href="../">MAIN</a></li>
-            <li><a href="../Student/ListStudents">LIST</a></li>
-            <li class="active"><a href="Person01.html">Qwinton</a></li>
-            <li><a href="Person02.html">Xander</a></li>
-            <li><a href="Person03.html">Arno</a></li>
-            <li><a href="Person04.html">Regardt</a></li>
-            <li><a href="Person05.html">Reinhardt</a></li>
-            <li><a href="javascript:history.back()">BACK</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Person 1 - Qwinton Knocklein</h1>
 
-    <section class="background">
-        <img src="Images/tony-stark-iron-man.webp" alt="Qwinton">
-        <div>
-            <h2>Background</h2>
-            <p>Qwinton is passionate about computer science...</p>
-        </div>
-    </section>
+        <!-- Bootstrap Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-    <section class="hobbies">
-        <div>
-            <h2>Hobbies</h2>
-            <p>Qwinton enjoys sports and the outdoors</p>
-        </div>
-        <img src="Images/black-widow-1.webp" alt="Qwinton's hobby">
-    </section>
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../">MAIN</a></li>
+                        <li><a href="../Student/ListStudents">LIST</a></li>
+                        <li class="active"><a href="Person01.html">Qwinton</a></li>
+                        <li><a href="Person02.html">Xander</a></li>
+                        <li><a href="Person03.html">Arno</a></li>
+                        <li><a href="Person04.html">Regardt</a></li>
+                        <li><a href="Person05.html">Reinhardt</a></li>
+                        <li><a href="javascript:history.back()">Back</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <section class="modules">
-        <h2>Registered Modules</h2>
-        <div>
-            <table>
-                <tr><th>Modules Semester </th><th>Modules Semester 2</th></tr>
-                <tr><td>INF272</td><td>INF272</td></tr>
-                <tr><td>COS301</td><td>COS301</td></tr>
-                <tr><td>COS332</td><td>COS330</td></tr>
-                <tr><td>COS333</td><td></td></tr>
-                <tr><td>IMY310</td><td></td></tr>
-            </table>
+        <!-- Three Column Layout -->
+        <div class="row">
+            <!-- Background and Bio Column -->
+            <div class="col-md-4">
+                <div class="well">
+                    <h3>Background</h3>
+                    <div class="text-center">
+                        <img src="Images/tony-stark-iron-man.webp" alt="Qwinton" class="img-responsive img-thumbnail" style="max-width: 200px; margin: 10px auto;" />
+                    </div>
+                    <p>I'm Qwinton Knocklein, a student of Computer Science who's passionate about software development, design, and music.</p>
+                </div>
+            </div>
+
+            <!-- Hobbies Column -->
+            <div class="col-md-4">
+                <div class="well">
+                    <h3>Hobbies</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Gaming</li>
+                        <li class="list-group-item">Music Production</li>
+                        <li class="list-group-item">Learning new tech</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="Images/black-widow-1.webp" alt="Qwinton Hobby" class="img-responsive img-thumbnail" style="max-width: 200px; margin: 10px auto;" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modules Column -->
+            <div class="col-md-4">
+                <div class="well">
+                    <h3>Modules</h3>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Modules Semester 1</th>
+                                <th>Modules Semester 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF272</td>
+                                <td>INF272</td>
+                            </tr>
+                            <tr>
+                                <td>COS301</td>
+                                <td>COS301</td>
+                            </tr>
+                            <tr>
+                                <td>COS332</td>
+                                <td>COS330</td>
+                            </tr>
+                            <tr>
+                                <td>COS333</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>IMY310</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
