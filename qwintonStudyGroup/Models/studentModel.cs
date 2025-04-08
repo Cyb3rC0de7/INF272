@@ -15,8 +15,5 @@ namespace qwintonStudyGroup.Models
 
 		[Display (Name = "Email")]
 		public string email { get; set; }
-
-        [Display(Name = "Link to personal page")]
-        public string myLink { get; set; }
     }
 }
