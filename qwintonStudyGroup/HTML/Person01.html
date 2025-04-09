@@ -35,6 +35,35 @@
                 background-color: #28a745;
             }
 
+        .navbar {
+            background-color: #343a40;
+            border-radius: 10px;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+        }
+
+            .navbar ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .navbar li {
+                margin-right: 15px;
+            }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+                .navbar a:hover {
+                    text-decoration: underline;
+                }
+
         .well {
             background-color: white;
             border: 1px solid #ddd;
@@ -76,9 +105,17 @@
         }
 
         @media (max-width: 768px) {
-            .toggle-buttons button {
+            .tab-button {
                 margin-bottom: 10px;
                 width: 100%;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar li {
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -86,7 +123,21 @@
 <body>
     <div class="container">
         <h1>Person 1 - Qwinton Knocklein</h1>
-        <div class="toggle-buttons" style="margin-bottom: 20px;">
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../">MAIN</a></li>
+                <li><a href="../Student/ListStudents">LIST</a></li>
+                <li><a href="Person01.html" style="font-weight:bold;">Qwinton</a></li>
+                <li><a href="Person02.html">Xander</a></li>
+                <li><a href="Person03.html">Arno</a></li>
+                <li><a href="Person04.html">Regardt</a></li>
+                <li><a href="Person05.html">Reinhardt</a></li>
+                <li><a href="javascript:history.back()">Back</a></li>
+            </ul>
+        </nav>
+
+        <div class="toggle-buttons" style="margin-bottom: 20px; text-align: center;">
             <button class="tab-button" data-target="background">Background</button>
             <button class="tab-button" data-target="hobbies">Hobbies</button>
             <button class="tab-button" data-target="modules">Modules</button>
@@ -123,26 +174,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>INF272</td>
-                            <td>INF272</td>
-                        </tr>
-                        <tr>
-                            <td>COS301</td>
-                            <td>COS301</td>
-                        </tr>
-                        <tr>
-                            <td>COS332</td>
-                            <td>COS330</td>
-                        </tr>
-                        <tr>
-                            <td>COS333</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>IMY310</td>
-                            <td></td>
-                        </tr>
+                        <tr><td>INF272</td><td>INF272</td></tr>
+                        <tr><td>COS301</td><td>COS301</td></tr>
+                        <tr><td>COS332</td><td>COS330</td></tr>
+                        <tr><td>COS333</td><td></td></tr>
+                        <tr><td>IMY310</td><td></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -156,19 +192,13 @@
         buttons.forEach(button => {
             button.addEventListener('click', () => {
                 const targetId = button.getAttribute('data-target');
-
-                sections.forEach(section => {
-                    section.classList.remove('active');
-                });
-
-                buttons.forEach(btn => {
-                    btn.classList.remove('active');
-                });
-
+                sections.forEach(section => section.classList.remove('active'));
+                buttons.forEach(btn => btn.classList.remove('active'));
                 document.getElementById(targetId).classList.add('active');
                 button.classList.add('active');
             });
         });
+
         document.querySelector('.tab-button[data-target="background"]').click();
     </script>
 </body>
